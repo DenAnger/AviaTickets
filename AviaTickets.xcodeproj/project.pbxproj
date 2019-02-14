@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69DAEB97220C71AE0019C21E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEB96220C71AE0019C21E /* AppDelegate.m */; };
+		69DAEB9A220C71AE0019C21E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEB99220C71AE0019C21E /* MainViewController.m */; };
+		69DAEB9F220C71AE0019C21E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DAEB9E220C71AE0019C21E /* Assets.xcassets */; };
+		69DAEBA2220C71AE0019C21E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */; };
+		69DAEBA5220C71AE0019C21E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBA4220C71AE0019C21E /* main.m */; };
+		69DAEBAD220C7DA30019C21E /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBAC220C7DA30019C21E /* Country.m */; };
+		69DAEBB0220C7F630019C21E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBAF220C7F630019C21E /* City.m */; };
+		69DAEBB4220C89950019C21E /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBB3220C89950019C21E /* Airport.m */; };
+		69DAEBB7220C8C790019C21E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBB6220C8C790019C21E /* DataManager.m */; };
+		69E6F78F221289D5007809CA /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 69E6F78E221289D5007809CA /* airports.json */; };
+		69E6F792221289E0007809CA /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 69E6F790221289E0007809CA /* cities.json */; };
+		69E6F793221289E0007809CA /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 69E6F791221289E0007809CA /* countries.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69DAEB92220C71AE0019C21E /* AviaTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DAEB95220C71AE0019C21E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69DAEB96220C71AE0019C21E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69DAEB98220C71AE0019C21E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		69DAEB99220C71AE0019C21E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		69DAEB9E220C71AE0019C21E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69DAEBA1220C71AE0019C21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69DAEBA3220C71AE0019C21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DAEBA4220C71AE0019C21E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69DAEBAB220C7DA30019C21E /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		69DAEBAC220C7DA30019C21E /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		69DAEBAE220C7F630019C21E /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		69DAEBAF220C7F630019C21E /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		69DAEBB2220C89950019C21E /* Airport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		69DAEBB3220C89950019C21E /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		69DAEBB5220C8C790019C21E /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		69DAEBB6220C8C790019C21E /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		69E6F78E221289D5007809CA /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		69E6F790221289E0007809CA /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		69E6F791221289E0007809CA /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69DAEB8F220C71AE0019C21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69DAEB89220C71AD0019C21E = {
+			isa = PBXGroup;
+			children = (
+				69DAEB94220C71AE0019C21E /* AviaTickets */,
+				69DAEB93220C71AE0019C21E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69DAEB93220C71AE0019C21E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69DAEB92220C71AE0019C21E /* AviaTickets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69DAEB94220C71AE0019C21E /* AviaTickets */ = {
+			isa = PBXGroup;
+			children = (
+				69DAEB95220C71AE0019C21E /* AppDelegate.h */,
+				69DAEB96220C71AE0019C21E /* AppDelegate.m */,
+				69DAEB98220C71AE0019C21E /* MainViewController.h */,
+				69DAEB99220C71AE0019C21E /* MainViewController.m */,
+				69DAEBB5220C8C790019C21E /* DataManager.h */,
+				69DAEBB6220C8C790019C21E /* DataManager.m */,
+				69E6F78D221289B5007809CA /* Jsons */,
+				69DAEBB1220C7F6B0019C21E /* Objects */,
+				69DAEB9E220C71AE0019C21E /* Assets.xcassets */,
+				69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */,
+				69DAEBA3220C71AE0019C21E /* Info.plist */,
+				69DAEBA4220C71AE0019C21E /* main.m */,
+			);
+			path = AviaTickets;
+			sourceTree = "<group>";
+		};
+		69DAEBB1220C7F6B0019C21E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				69DAEBB2220C89950019C21E /* Airport.h */,
+				69DAEBB3220C89950019C21E /* Airport.m */,
+				69DAEBAE220C7F630019C21E /* City.h */,
+				69DAEBAF220C7F630019C21E /* City.m */,
+				69DAEBAB220C7DA30019C21E /* Country.h */,
+				69DAEBAC220C7DA30019C21E /* Country.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		69E6F78D221289B5007809CA /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				69E6F790221289E0007809CA /* cities.json */,
+				69E6F791221289E0007809CA /* countries.json */,
+				69E6F78E221289D5007809CA /* airports.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69DAEB91220C71AE0019C21E /* AviaTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DAEBA8220C71AE0019C21E /* Build configuration list for PBXNativeTarget "AviaTickets" */;
+			buildPhases = (
+				69DAEB8E220C71AE0019C21E /* Sources */,
+				69DAEB8F220C71AE0019C21E /* Frameworks */,
+				69DAEB90220C71AE0019C21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AviaTickets;
+			productName = AviaTickets;
+			productReference = 69DAEB92220C71AE0019C21E /* AviaTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69DAEB8A220C71AD0019C21E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Denis Abramov";
+				TargetAttributes = {
+					69DAEB91220C71AE0019C21E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 69DAEB8D220C71AD0019C21E /* Build configuration list for PBXProject "AviaTickets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69DAEB89220C71AD0019C21E;
+			productRefGroup = 69DAEB93220C71AE0019C21E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69DAEB91220C71AE0019C21E /* AviaTickets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69DAEB90220C71AE0019C21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E6F792221289E0007809CA /* cities.json in Resources */,
+				69DAEBA2220C71AE0019C21E /* LaunchScreen.storyboard in Resources */,
+				69DAEB9F220C71AE0019C21E /* Assets.xcassets in Resources */,
+				69E6F793221289E0007809CA /* countries.json in Resources */,
+				69E6F78F221289D5007809CA /* airports.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69DAEB8E220C71AE0019C21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DAEBB0220C7F630019C21E /* City.m in Sources */,
+				69DAEBAD220C7DA30019C21E /* Country.m in Sources */,
+				69DAEBB7220C8C790019C21E /* DataManager.m in Sources */,
+				69DAEB9A220C71AE0019C21E /* MainViewController.m in Sources */,
+				69DAEBB4220C89950019C21E /* Airport.m in Sources */,
+				69DAEBA5220C71AE0019C21E /* main.m in Sources */,
+				69DAEB97220C71AE0019C21E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DAEBA1220C71AE0019C21E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69DAEBA6220C71AE0019C21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69DAEBA7220C71AE0019C21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69DAEBA9220C71AE0019C21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJN9TW8RPS;
+				INFOPLIST_FILE = AviaTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DenAnger.AviaTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69DAEBAA220C71AE0019C21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJN9TW8RPS;
+				INFOPLIST_FILE = AviaTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DenAnger.AviaTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69DAEB8D220C71AD0019C21E /* Build configuration list for PBXProject "AviaTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DAEBA6220C71AE0019C21E /* Debug */,
+				69DAEBA7220C71AE0019C21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DAEBA8220C71AE0019C21E /* Build configuration list for PBXNativeTarget "AviaTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DAEBA9220C71AE0019C21E /* Debug */,
+				69DAEBAA220C71AE0019C21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69DAEB8A220C71AD0019C21E /* Project object */;
+}
