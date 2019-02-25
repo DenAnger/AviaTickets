@@ -10,6 +10,7 @@
 #import <YYWebImage/YYWebImage.h>
 #import "Ticket.h"
 
+
 @interface TicketTableViewCell ()
 @property (nonatomic, strong) UIImageView *airlineLogoView;
 @property (nonatomic, strong) UILabel *priceLabel;
@@ -54,7 +55,7 @@
     
     self.contentView.frame = CGRectMake(10.0, 10.0, [UIScreen mainScreen].bounds.size.width - 20.0, self.frame.size.height - 20.0);
     _placesLabel.frame = CGRectMake(10.0, 10.0, self.contentView.frame.size.width - 110.0, 40.0);
-    _airlineLogoView.frame = CGRectMake(CGRectGetMaxX(_priceLabel.frame) + 10.0, 10.0, 80.0, 80.0);
+    _airlineLogoView.frame = CGRectMake(CGRectGetMaxX(_priceLabel.frame) - 20.0, 10.0, 80.0, 80.0);
     _placesLabel.frame = CGRectMake(10.0, CGRectGetMaxY(_priceLabel.frame) + 16.0, 100.0, 20.0);
     _dateLabel.frame = CGRectMake(10.0, CGRectGetMaxY(_placesLabel.frame) + 8.0, self.contentView.frame.size.width - 20.0, 20.0);
 }
@@ -67,8 +68,8 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd MMMM yyyy hh:mm";
     _dateLabel.text = [dateFormatter stringFromDate:ticket.departure];
-//    NSURL *urlLogo = AirlineLogo(ticket.airline);
-//    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
+    NSURL *urlLogo = AirlineLogo(ticket.airline);
+    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
 }
 
 @end
