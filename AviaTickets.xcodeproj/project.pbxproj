@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05260574B068A50D1DB9C716 /* libPods-AviaTickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E52F138A663C34D72372E02 /* libPods-AviaTickets.a */; };
 		69057CF32212902E00E31E4D /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 69057CF12212902E00E31E4D /* cities.json */; };
 		69057CF42212902E00E31E4D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 69057CF22212902E00E31E4D /* countries.json */; };
 		69057CF62212903500E31E4D /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 69057CF52212903500E31E4D /* airports.json */; };
+		692204F2221C81300028E9C6 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 692204F1221C81300028E9C6 /* TicketTableViewCell.m */; };
+		692204F5221C92E10028E9C6 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692204F4221C92E10028E9C6 /* TicketsViewController.m */; };
+		692F284A22229FD200CBECCF /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 692F284922229FD200CBECCF /* LocationService.m */; };
+		692F284D2222ABB600CBECCF /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 692F284C2222ABB600CBECCF /* MapPrice.m */; };
+		698F9D42221BF85400F1B61A /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 698F9D41221BF85400F1B61A /* APIManager.m */; };
+		69A138E522238D5D0056C343 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A138E422238D5D0056C343 /* MapViewController.m */; };
 		69BC0B97220EC5D600BF5A88 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BC0B96220EC5D600BF5A88 /* PlaceViewController.m */; };
 		69DAEB97220C71AE0019C21E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEB96220C71AE0019C21E /* AppDelegate.m */; };
 		69DAEB9A220C71AE0019C21E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEB99220C71AE0019C21E /* MainViewController.m */; };
@@ -20,12 +27,27 @@
 		69DAEBB0220C7F630019C21E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBAF220C7F630019C21E /* City.m */; };
 		69DAEBB4220C89950019C21E /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBB3220C89950019C21E /* Airport.m */; };
 		69DAEBB7220C8C790019C21E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DAEBB6220C8C790019C21E /* DataManager.m */; };
+		69E77CA2221C693B0049CE95 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E77CA1221C693B0049CE95 /* Ticket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E52F138A663C34D72372E02 /* libPods-AviaTickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviaTickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AF884CF525447638714631 /* Pods-AviaTickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviaTickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviaTickets/Pods-AviaTickets.release.xcconfig"; sourceTree = "<group>"; };
 		69057CF12212902E00E31E4D /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		69057CF22212902E00E31E4D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		69057CF52212903500E31E4D /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		692204F0221C81300028E9C6 /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		692204F1221C81300028E9C6 /* TicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		692204F3221C92E10028E9C6 /* TicketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		692204F4221C92E10028E9C6 /* TicketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		692F284822229FD200CBECCF /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		692F284922229FD200CBECCF /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		692F284B2222ABB600CBECCF /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		692F284C2222ABB600CBECCF /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		698F9D40221BF85400F1B61A /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		698F9D41221BF85400F1B61A /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		69A138E322238D5D0056C343 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		69A138E422238D5D0056C343 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		69BC0B95220EC5D600BF5A88 /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		69BC0B96220EC5D600BF5A88 /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		69DAEB92220C71AE0019C21E /* AviaTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +67,9 @@
 		69DAEBB3220C89950019C21E /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
 		69DAEBB5220C8C790019C21E /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		69DAEBB6220C8C790019C21E /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		69E77CA0221C693B0049CE95 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		69E77CA1221C693B0049CE95 /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		AF7FDC1F7FCAA5AA1E2C84AA /* Pods-AviaTickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviaTickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviaTickets/Pods-AviaTickets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05260574B068A50D1DB9C716 /* libPods-AviaTickets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32DBC90CD8A78BAF05DE8426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E52F138A663C34D72372E02 /* libPods-AviaTickets.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB6D27CAFB94D96E3499374 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF7FDC1F7FCAA5AA1E2C84AA /* Pods-AviaTickets.debug.xcconfig */,
+				51AF884CF525447638714631 /* Pods-AviaTickets.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		69057CF02212900900E31E4D /* Jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +111,32 @@
 			path = Jsons;
 			sourceTree = "<group>";
 		};
-		69BC0B94220EC59300BF5A88 /* ViewControllers */ = {
+		698F9D43221BF96000F1B61A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				698F9D40221BF85400F1B61A /* APIManager.h */,
+				698F9D41221BF85400F1B61A /* APIManager.m */,
+				69DAEBB5220C8C790019C21E /* DataManager.h */,
+				69DAEBB6220C8C790019C21E /* DataManager.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		69BC0B94220EC59300BF5A88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				69DAEB98220C71AE0019C21E /* MainViewController.h */,
 				69DAEB99220C71AE0019C21E /* MainViewController.m */,
+				69A138E322238D5D0056C343 /* MapViewController.h */,
+				69A138E422238D5D0056C343 /* MapViewController.m */,
 				69BC0B95220EC5D600BF5A88 /* PlaceViewController.h */,
 				69BC0B96220EC5D600BF5A88 /* PlaceViewController.m */,
+				692204F0221C81300028E9C6 /* TicketTableViewCell.h */,
+				692204F1221C81300028E9C6 /* TicketTableViewCell.m */,
+				692204F3221C92E10028E9C6 /* TicketsViewController.h */,
+				692204F4221C92E10028E9C6 /* TicketsViewController.m */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		69DAEB89220C71AD0019C21E = {
@@ -84,6 +144,8 @@
 			children = (
 				69DAEB94220C71AE0019C21E /* AviaTickets */,
 				69DAEB93220C71AE0019C21E /* Products */,
+				3DB6D27CAFB94D96E3499374 /* Pods */,
+				32DBC90CD8A78BAF05DE8426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +162,10 @@
 			children = (
 				69DAEB95220C71AE0019C21E /* AppDelegate.h */,
 				69DAEB96220C71AE0019C21E /* AppDelegate.m */,
-				69DAEBB5220C8C790019C21E /* DataManager.h */,
-				69DAEBB6220C8C790019C21E /* DataManager.m */,
+				698F9D43221BF96000F1B61A /* Helpers */,
 				69DAEBB1220C7F6B0019C21E /* Models */,
 				69057CF02212900900E31E4D /* Jsons */,
-				69BC0B94220EC59300BF5A88 /* ViewControllers */,
+				69BC0B94220EC59300BF5A88 /* Controllers */,
 				69DAEB9E220C71AE0019C21E /* Assets.xcassets */,
 				69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */,
 				69DAEBA3220C71AE0019C21E /* Info.plist */,
@@ -122,6 +183,12 @@
 				69DAEBAF220C7F630019C21E /* City.m */,
 				69DAEBAB220C7DA30019C21E /* Country.h */,
 				69DAEBAC220C7DA30019C21E /* Country.m */,
+				692F284822229FD200CBECCF /* LocationService.h */,
+				692F284922229FD200CBECCF /* LocationService.m */,
+				692F284B2222ABB600CBECCF /* MapPrice.h */,
+				692F284C2222ABB600CBECCF /* MapPrice.m */,
+				69E77CA0221C693B0049CE95 /* Ticket.h */,
+				69E77CA1221C693B0049CE95 /* Ticket.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69DAEBA8220C71AE0019C21E /* Build configuration list for PBXNativeTarget "AviaTickets" */;
 			buildPhases = (
+				49B150525281A971853E335A /* [CP] Check Pods Manifest.lock */,
 				69DAEB8E220C71AE0019C21E /* Sources */,
 				69DAEB8F220C71AE0019C21E /* Frameworks */,
 				69DAEB90220C71AE0019C21E /* Resources */,
@@ -193,6 +261,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49B150525281A971853E335A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AviaTickets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69DAEB8E220C71AE0019C21E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,10 +293,17 @@
 			files = (
 				69DAEBB0220C7F630019C21E /* City.m in Sources */,
 				69DAEBAD220C7DA30019C21E /* Country.m in Sources */,
+				698F9D42221BF85400F1B61A /* APIManager.m in Sources */,
 				69DAEBB7220C8C790019C21E /* DataManager.m in Sources */,
+				692204F2221C81300028E9C6 /* TicketTableViewCell.m in Sources */,
 				69BC0B97220EC5D600BF5A88 /* PlaceViewController.m in Sources */,
+				692F284D2222ABB600CBECCF /* MapPrice.m in Sources */,
+				69E77CA2221C693B0049CE95 /* Ticket.m in Sources */,
+				692F284A22229FD200CBECCF /* LocationService.m in Sources */,
 				69DAEB9A220C71AE0019C21E /* MainViewController.m in Sources */,
+				692204F5221C92E10028E9C6 /* TicketsViewController.m in Sources */,
 				69DAEBB4220C89950019C21E /* Airport.m in Sources */,
+				69A138E522238D5D0056C343 /* MapViewController.m in Sources */,
 				69DAEBA5220C71AE0019C21E /* main.m in Sources */,
 				69DAEB97220C71AE0019C21E /* AppDelegate.m in Sources */,
 			);
@@ -337,8 +437,10 @@
 		};
 		69DAEBA9220C71AE0019C21E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7FDC1F7FCAA5AA1E2C84AA /* Pods-AviaTickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJN9TW8RPS;
 				INFOPLIST_FILE = AviaTickets/Info.plist;
@@ -354,8 +456,10 @@
 		};
 		69DAEBAA220C71AE0019C21E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AF884CF525447638714631 /* Pods-AviaTickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJN9TW8RPS;
 				INFOPLIST_FILE = AviaTickets/Info.plist;
