@@ -26,8 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGRect frame = [self.view bounds];
-    
     self.title = @"Карта цен";
     
     _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
@@ -69,9 +67,9 @@
         dispatch_async(dispatch_get_main_queue(), ^ {
             MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
             annotation.title = [NSString stringWithFormat:@"%@ (%@)", price.destination.name, price.destination.code];
-            annotation.subtitle = [NSString stringWithFormat:@"%Id руб.", (long)price.value];
+            annotation.subtitle = [NSString stringWithFormat:@"%ld руб.", (long)price.value];
             annotation.coordinate = price.destination.coordinate;
-            [_mapView addAnnotation: annotation];
+            [self->_mapView addAnnotation: annotation];
         });
     }
 }
