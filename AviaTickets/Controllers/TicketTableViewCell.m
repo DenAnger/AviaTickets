@@ -72,4 +72,14 @@
     [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
 }
 
+- (void)setFavoriteTicket:(FavoriteTicket *)favoriteTicket {
+    _favoriteTicket = favoriteTicket;
+    _priceLabel.text = [NSString stringWithFormat:@"%lId руб.", favoriteTicket.price];
+    _priceLabel.text = [NSString stringWithFormat:@"%@ - %@", favoriteTicket.from, favoriteTicket.to];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"dd MMMM yyyy hh:mm";
+    NSURL *urlLogo = AirlineLogo(favoriteTicket.airline);
+    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
+}
+
 @end
