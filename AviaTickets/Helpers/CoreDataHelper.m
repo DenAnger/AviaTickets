@@ -28,7 +28,7 @@
 }
 
 - (void)setup {
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"air" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Tickets" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     NSURL *docsURL = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     NSURL *storeURL = [docsURL URLByAppendingPathComponent:@"base.sqlite"];
@@ -51,7 +51,7 @@
 
 - (FavoriteTicket *)favoriteFromTicket:(Ticket *)ticket {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"FavoriteTicket"];
-    request.predicate = [NSPredicate predicateWithFormat:@"price == %Id AND airline == %@ AND from == %@ AND to == %@ AND departure == %@ AND expires == %@ AND flightNumber == %Id",
+    request.predicate = [NSPredicate predicateWithFormat:@"price == %ld AND airline == %@ AND from == %@ AND to == %@ AND departure == %@ AND expires == %@ AND flightNumber == %ld",
                          (long)ticket.price.integerValue, ticket.airline, ticket.from, ticket.to, ticket.departure, ticket.expires,
                          (long)ticket.flightNumber.integerValue];
     return [[_managedObjectContext executeFetchRequest:request error:nil] firstObject];
