@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "City.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface MapPrice : NSObject
 
 @property (strong, nonatomic) City *destination;
@@ -25,5 +23,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary withOrigin: (City *)origin;
 
 @end
-
-NS_ASSUME_NONNULL_END

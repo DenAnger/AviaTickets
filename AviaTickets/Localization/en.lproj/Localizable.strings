@@ -1,0 +1,54 @@
+/* 
+  Localizable.strings
+  AviaTickets
+
+  Created by Denis Abramov on 10/03/2019.
+  Copyright © 2019 Denis Abramov. All rights reserved.
+*/
+
+// TabBarController
+
+"search_tab" = "Search";
+"map_tab" = "Map";
+"favorites_tab" = "Favorites";
+
+// TicketsTableViewCell
+
+"tickets_lbl" = "Tickets";
+"rub_ticket" = "%@ rub.";
+
+// MainViewController
+
+"search_btn" = "Search";
+"departure_place" = "Departure place";
+"arrive_place" = "Arrive place";
+"alas_alert" = "Alas!";
+"not_ticket_alert" = "In this direction of tickets it is not found";
+
+// LocationService
+
+"oops_alert" = "Oops!";
+"not_city_alert" = "It was not succeeded to define the current city!";
+"close_alert" = "Close";
+
+// MapViewController
+
+"rub_price" = "%ld rub.";
+
+// PlaceViewController
+
+"cities_seg" = "Cities";
+"airports_seg" = "Airports";
+
+// TicketsViewController
+
+"action_ticket" = "Action with ticket";
+"chosen_ticket" = "What needs to be made with the chosen ticket?";
+"delete_favorite" = "To delete from favorites";
+"add_favorite" = "To add to favourites";
+"remind" = "To remind";
+"rub_remind" = "%@ - %@ for %@ rub.";
+"remind_ticket" = "Reminder on the ticket";
+"succeessfully" = "Successfully";
+"notice_sent" = "The notice will be sent - %@";
+

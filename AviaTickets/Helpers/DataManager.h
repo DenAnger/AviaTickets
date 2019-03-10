@@ -19,8 +19,6 @@ typedef enum DataSourceType {
     DataSourceTypeCountry
 } DataSourceType;
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface DataManager : NSObject
 
 + (instancetype)sharedInstance;
@@ -34,5 +32,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (City *)cityForLocation:(CLLocation *) location;
 
 @end
-
-NS_ASSUME_NONNULL_END

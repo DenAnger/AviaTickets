@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface Airport : NSObject
 
 @property (nonatomic, strong) NSString *name;
@@ -25,5 +23,3 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
-
-NS_ASSUME_NONNULL_END
