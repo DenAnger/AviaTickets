@@ -10,9 +10,7 @@
 #import <YYWebImage/YYWebImage.h>
 #import "Ticket.h"
 
-
 @interface TicketTableViewCell ()
-
 @property (nonatomic, strong) UILabel *priceLabel;
 @property (nonatomic, strong) UILabel *placesLabel;
 @property (nonatomic, strong) UILabel *dateLabel;
@@ -62,7 +60,7 @@
 
 - (void)setTicket:(Ticket *)ticket {
     _ticket = ticket;
-    _priceLabel.text = [NSString stringWithFormat:@" %@ руб.", ticket.price];
+    _priceLabel.text = [NSString stringWithFormat:NSLocalizedString(@"rub_ticket", "%@ rub."), ticket.price];
     _placesLabel.text = [NSString stringWithFormat:@" %@ - %@", ticket.from, ticket.to];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -78,6 +76,7 @@
     _placesLabel.text = [NSString stringWithFormat:@"%@ - %@", favoriteTicket.from, favoriteTicket.to];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd MMMM yyyy hh:mm";
+    _dateLabel.text = [dateFormatter stringFromDate:favoriteTicket.departure];
     NSURL *urlLogo = AirlineLogo(favoriteTicket.airline);
     [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
 }

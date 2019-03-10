@@ -10,8 +10,6 @@
 #import "DataManager.h"
 #import "MainViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface APIManager : NSObject
 
 + (instancetype)sharedInstance;
@@ -20,5 +18,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion;
 
 @end
-
-NS_ASSUME_NONNULL_END

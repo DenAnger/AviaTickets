@@ -19,7 +19,6 @@
 #define API_URL_CITY_FROM_IP @"https://www.travelpayouts.com/whereami?ip="
 #define API_URL_MAP_PRICE @"https://map.aviasales.ru/prices.json?origin_iata="
 
-
 @implementation APIManager
 
 + (instancetype)sharedInstance {

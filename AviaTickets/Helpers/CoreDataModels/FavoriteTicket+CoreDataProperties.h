@@ -9,9 +9,6 @@
 
 #import "FavoriteTicket+CoreDataClass.h"
 
-
-NS_ASSUME_NONNULL_BEGIN
-
 @interface FavoriteTicket (CoreDataProperties)
 
 + (NSFetchRequest<FavoriteTicket *> *)fetchRequest;
@@ -27,5 +24,3 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int16_t flightNumber;
 
 @end
-
-NS_ASSUME_NONNULL_END

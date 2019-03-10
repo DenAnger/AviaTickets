@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "DataManager.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 typedef enum PlaceType {
     PlaceTypeArrival,
     PlaceTypeDeparture
@@ -26,5 +24,3 @@ typedef enum PlaceType {
 - (instancetype)initWithType:(PlaceType)type;
 
 @end
-
-NS_ASSUME_NONNULL_END

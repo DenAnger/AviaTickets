@@ -17,6 +17,4 @@ typedef struct SearchRequest {
 
 @interface MainViewController : UIViewController
 
-
 @end
-

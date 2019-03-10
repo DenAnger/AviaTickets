@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  AviaTickets
+
+  Created by Denis Abramov on 10/03/2019.
+  Copyright © 2019 Denis Abramov. All rights reserved.
+*/
+
+// TabBarController
+
+"search_tab" = "La búsqueda";
+"map_tab" = "El mapa";
+"favorites_tab" = "Elegido";
+
+// TicketsTableViewCell
+
+"tickets_lbl" = "Los billetes";
+"rub_ticket" = "%@ rbl.";
+
+// MainViewController
+
+"search_btn" = "La búsqueda";
+"departure_place" = "El lugar de la salida";
+"arrive_place" = "El lugar de la llegada";
+"alas_alert" = "¡Ay!";
+"not_ticket_alert" = "Por la dirección dada de los billetes no es encontrado";
+
+// LocationService
+
+"oops_alert" = "¡Ay!!";
+"not_city_alert" = "¡No consiguió determinar la ciudad corriente!";
+"close_alert" = "Cerrar";
+
+// MapViewController
+
+"rub_price" = "%ld rbl.";
+
+// PlaceViewController
+
+"cities_seg" = "Las ciudades";
+"airports_seg" = "Los Aeropuertos";
+
+// TicketsViewController
+
+"action_ticket" = "Las acciones con el billete";
+"chosen_ticket" = "¿Que es necesario hacer con el billete escogido?";
+"delete_favorite" = "Quitar de elegido";
+"add_favorite" = "Añadir en elegido";
+"remind" = "Recordar";
+"rub_remind" = "%@ - %@ Por %@ rbl.";
+"remind_ticket" = "El recordatorio del billete";
+"succeessfully" = "Con éxito";
+"notice_sent" = "El aviso será enviado - %@";

@@ -12,8 +12,6 @@
 #import "FavoriteTicket+CoreDataClass.h"
 #import "Ticket.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface CoreDataHelper : NSObject
 
 + (instancetype)sharedInstance;
@@ -23,5 +21,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeFromFavorite:(Ticket *)ticket;
 
 @end
-
-NS_ASSUME_NONNULL_END
