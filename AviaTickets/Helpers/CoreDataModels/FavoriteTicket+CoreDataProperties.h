@@ -11,7 +11,7 @@
 
 @interface FavoriteTicket (CoreDataProperties)
 
-+ (NSFetchRequest<FavoriteTicket *> *)fetchRequest;
++ (NSFetchRequest<FavoriteTicket *> *_Nullable)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSDate *created;
 @property (nullable, nonatomic, copy) NSDate *departure;
