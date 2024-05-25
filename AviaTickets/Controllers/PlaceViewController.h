@@ -10,8 +10,8 @@
 #import "DataManager.h"
 
 typedef enum PlaceType {
-    PlaceTypeArrival,
-    PlaceTypeDeparture
+	PlaceTypeArrival,
+	PlaceTypeDeparture
 } PlaceType;
 
 @protocol PlaceViewControllerDelegate <NSObject>

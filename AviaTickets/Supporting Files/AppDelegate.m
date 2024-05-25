@@ -19,15 +19,15 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CGRect windowFrame = [[UIScreen mainScreen] bounds];
-    self.window = [[UIWindow alloc]initWithFrame: windowFrame];
-
-    TabBarController *tabBarController = [[TabBarController alloc] init];
-
-    self.window.rootViewController = tabBarController;
-    [self.window makeKeyAndVisible];
-    [[NotificationCenter sharedInstance] registerService];
-    return YES;
+	CGRect windowFrame = [[UIScreen mainScreen] bounds];
+	self.window = [[UIWindow alloc]initWithFrame: windowFrame];
+	
+	TabBarController *tabBarController = [[TabBarController alloc] init];
+	
+	self.window.rootViewController = tabBarController;
+	[self.window makeKeyAndVisible];
+	[[NotificationCenter sharedInstance] registerService];
+	return YES;
 }
 
 @end

@@ -145,7 +145,6 @@
 		698F9D43221BF96000F1B61A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				69BDB5C7222CFE3E00E8EA74 /* CoreDataModels */,
 				698F9D40221BF85400F1B61A /* APIManager.h */,
 				698F9D41221BF85400F1B61A /* APIManager.m */,
 				69BDB5CE222D009000E8EA74 /* CoreDataHelper.h */,
@@ -188,6 +187,25 @@
 			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
+		69D2BBD12C02407700F6E218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69DAEB95220C71AE0019C21E /* AppDelegate.h */,
+				69DAEB96220C71AE0019C21E /* AppDelegate.m */,
+				69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D2BBD22C02409200F6E218 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69057CF02212900900E31E4D /* Jsons */,
+				69DAEB9E220C71AE0019C21E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		69DAEB89220C71AD0019C21E = {
 			isa = PBXGroup;
 			children = (
@@ -209,15 +227,12 @@
 		69DAEB94220C71AE0019C21E /* AviaTickets */ = {
 			isa = PBXGroup;
 			children = (
-				69DAEB95220C71AE0019C21E /* AppDelegate.h */,
-				69DAEB96220C71AE0019C21E /* AppDelegate.m */,
-				698F9D43221BF96000F1B61A /* Helpers */,
 				69DAEBB1220C7F6B0019C21E /* Models */,
-				69057CF02212900900E31E4D /* Jsons */,
 				69BC0B94220EC59300BF5A88 /* Controllers */,
+				698F9D43221BF96000F1B61A /* Helpers */,
 				6941086F2234B05300B67A29 /* Localization */,
-				69DAEB9E220C71AE0019C21E /* Assets.xcassets */,
-				69DAEBA0220C71AE0019C21E /* LaunchScreen.storyboard */,
+				69D2BBD22C02409200F6E218 /* Resources */,
+				69D2BBD12C02407700F6E218 /* Supporting Files */,
 				69DAEBA3220C71AE0019C21E /* Info.plist */,
 				69BDB5C4222CFD4300E8EA74 /* Tickets.xcdatamodeld */,
 				69DAEBA4220C71AE0019C21E /* main.m */,
@@ -228,6 +243,7 @@
 		69DAEBB1220C7F6B0019C21E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				69BDB5C7222CFE3E00E8EA74 /* CoreDataModels */,
 				69DAEBB2220C89950019C21E /* Airport.h */,
 				69DAEBB3220C89950019C21E /* Airport.m */,
 				69DAEBAE220C7F630019C21E /* City.h */,

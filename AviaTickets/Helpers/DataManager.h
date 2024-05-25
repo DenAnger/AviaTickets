@@ -14,9 +14,9 @@
 #define kDataManagerLoadDataDidComplete @"DataManagerLoadDataDidComplete"
 
 typedef enum DataSourceType {
-    DataSourceTypeAirport,
-    DataSourceTypeCity,
-    DataSourceTypeCountry
+	DataSourceTypeAirport,
+	DataSourceTypeCity,
+	DataSourceTypeCountry
 } DataSourceType;
 
 @interface DataManager : NSObject
